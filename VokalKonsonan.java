@@ -15,7 +15,7 @@ public class VokalKonsonan {
         System.out.print("Masukkan karakter ketiga: ");
         c = MyInput.next().charAt(0);
 
-        if (!Character.isLetter(a) || !Character.isLetter(b) || !Character.isLetter(c) || !Character.isLowerCase(a) || !Character.isLowerCase(b) || !Character.isLowerCase(c)) {
+        if (!Character.isLetter(a) || !Character.isLetter(b) || !Character.isLetter(c) || Character.isUpperCase(a) || Character.isUpperCase(b) || Character.isUpperCase(c)) {
             System.out.println("Tolong hanya masukkan huruf kecil(a-z).");
         } else {
             boolean konsonan1 = (a != 'a' && a != 'e' && a != 'i' && a != 'o' && a != 'u');
